@@ -50,6 +50,20 @@ def _has_property(prop_list, property_name):
 def process_swagger(spec_path):
     with open(spec_path, "r") as f:
         spec = json.loads(f.read())
+    if "security" not in spec:
+        spec["security"] = [
+            {
+              "BearerToken": []
+            }
+          ]
+        spec["securityDefinitions"] = {
+            "BearerToken": {
+              "description": "Bearer Token authentication",
+              "in": "header",
+              "name": "authorization",
+              "type": "apiKey"
+            }
+          }
 
     apply_func_to_spec_operations(spec, strip_tags_from_operation_id)
     apply_func_to_spec_operations(spec, add_codegen_request_body)

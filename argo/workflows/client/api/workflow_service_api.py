@@ -143,7 +143,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}', 'POST',
@@ -295,7 +295,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}', 'DELETE',
@@ -426,7 +426,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}', 'GET',
@@ -551,7 +551,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/lint', 'POST',
@@ -708,7 +708,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}', 'GET',
@@ -888,7 +888,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}/{podName}/log', 'GET',
@@ -1022,7 +1022,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}/resubmit', 'PUT',
@@ -1156,7 +1156,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}/resume', 'PUT',
@@ -1290,7 +1290,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}/retry', 'PUT',
@@ -1424,7 +1424,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}/set', 'PUT',
@@ -1558,7 +1558,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}/stop', 'PUT',
@@ -1683,7 +1683,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/submit', 'POST',
@@ -1817,7 +1817,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}/suspend', 'PUT',
@@ -1951,7 +1951,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflows/{namespace}/{name}/terminate', 'PUT',
@@ -2103,7 +2103,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/stream/events/{namespace}', 'GET',
@@ -2255,7 +2255,7 @@ class WorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/workflow-events/{namespace}', 'GET',

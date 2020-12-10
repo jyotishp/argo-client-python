@@ -7738,13 +7738,14 @@
   "securityDefinitions": {
     "BearerToken": {
       "description": "Bearer Token authentication",
-      "type": "apiKey",
+      "in": "header",
       "name": "authorization",
-      "in": "header"
-    },
-    "HTTPBasic": {
-      "description": "HTTP Basic authentication",
-      "type": "basic"
+      "type": "apiKey"
     }
-  }
+  },
+  "security": [
+    {
+      "BearerToken": []
+    }
+  ]
 }

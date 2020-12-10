@@ -121,7 +121,7 @@ class InfoServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/info', 'GET',
@@ -224,7 +224,7 @@ class InfoServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/userinfo', 'GET',
@@ -327,7 +327,7 @@ class InfoServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/version', 'GET',

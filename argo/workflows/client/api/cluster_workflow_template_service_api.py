@@ -134,7 +134,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cluster-workflow-templates', 'POST',
@@ -277,7 +277,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cluster-workflow-templates/{name}', 'DELETE',
@@ -394,7 +394,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cluster-workflow-templates/{name}', 'GET',
@@ -510,7 +510,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cluster-workflow-templates/lint', 'POST',
@@ -653,7 +653,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cluster-workflow-templates', 'GET',
@@ -778,7 +778,7 @@ class ClusterWorkflowTemplateServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cluster-workflow-templates/{name}', 'PUT',

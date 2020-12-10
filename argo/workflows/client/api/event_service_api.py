@@ -152,7 +152,7 @@ class EventServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/events/{namespace}/{discriminator}', 'POST',

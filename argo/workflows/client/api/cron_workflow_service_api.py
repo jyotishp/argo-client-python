@@ -143,7 +143,7 @@ class CronWorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cron-workflows/{namespace}', 'POST',
@@ -295,7 +295,7 @@ class CronWorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cron-workflows/{namespace}/{name}', 'DELETE',
@@ -421,7 +421,7 @@ class CronWorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cron-workflows/{namespace}/{name}', 'GET',
@@ -546,7 +546,7 @@ class CronWorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cron-workflows/{namespace}/lint', 'POST',
@@ -698,7 +698,7 @@ class CronWorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cron-workflows/{namespace}', 'GET',
@@ -832,7 +832,7 @@ class CronWorkflowServiceApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BearerToken']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/cron-workflows/{namespace}/{name}', 'PUT',
